@@ -1,6 +1,6 @@
 package test;
 
 public class MainTest {
-	private String notUsed;
+	//private String notUsed;
 }
 
