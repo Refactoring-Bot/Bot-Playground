@@ -3,6 +3,8 @@ package calculator;
 public class Calculator extends SuperCalculator{
 
 	private String resultAsText;
+	
+	public final static int multiplier = 10;
 
 	public double addition(double a, double b) {
 		return a + b;
