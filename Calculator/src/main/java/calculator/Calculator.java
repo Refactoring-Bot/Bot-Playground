@@ -1,6 +1,6 @@
 package calculator;
 
-public class Calculator implements CalculatorInterface{
+public class Calculator extends SuperCalculator{
 
 	private String resultAsText;
 
