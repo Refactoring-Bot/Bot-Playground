@@ -10,7 +10,7 @@ public class Calculator extends SuperCalculator{
 		return a + b;
 	}
 
-	public double multiplikation(double a, double b) {
+	public double multiplikation(double a, double b, double c) {
 		return a * b;
 	}
 
