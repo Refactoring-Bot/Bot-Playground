@@ -2,10 +2,9 @@ package calculator;
 
 public class Calculator extends SuperCalculator {
 
-    private String resultAsText;
+    public static final int MULTIPLIER = 10;
 
-    public final static int MULTIPLIER = 10;
-
+    @Override
     public double addition(double a, double b) {
         return a + b;
     }
