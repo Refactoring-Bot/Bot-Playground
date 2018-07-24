@@ -2,8 +2,6 @@ package calculator;
 
 public class Calculator extends SuperCalculator {
 
-    private String resultAsText;
-
     public static final int MULTIPLIER = 10;
 
     @Override
