@@ -13,10 +13,10 @@ public class Calculator extends SuperCalculator {
     }
 
     public double multiplication(double a, double b, double c) {
-        return a * b * c;
+        return a * b;
     }
 
-    public double multiplication(double a, double b) { return multiplication(a, b, 1); }
+    public double multiplication(double a, double b) { return multiplication(a, b, 42); }
 
     public double subtraction(double a, double b) {
         return a - b;
