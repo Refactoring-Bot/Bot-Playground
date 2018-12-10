@@ -30,7 +30,8 @@ public class Calculator extends SuperCalculator {
         // get numbers
         System.out.println("Enter first and second number:");
         Scanner inp= new Scanner(System.in);
-        int num1,num2;
+        int num1;
+        int num2;
         num1 = inp.nextInt();
         num2 = inp.nextInt();
 
@@ -57,6 +58,7 @@ public class Calculator extends SuperCalculator {
                 System.out.println("Illegal Operation");
         }
 
+        inp.close();
     }
 }
 
