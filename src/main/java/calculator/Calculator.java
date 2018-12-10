@@ -54,7 +54,7 @@ public class Calculator extends SuperCalculator {
                 System.out.println(division( num1,num2));
                 break;
             default:
-                System.out.println("Illigal Operation");
+                System.out.println("Illegal Operation");
         }
 
     }
