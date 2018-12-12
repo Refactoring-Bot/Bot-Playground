@@ -31,41 +31,49 @@ public class Calculator extends SuperCalculator {
     }
 
     public void runProgram() {
+        println("The calculator is ready to calculate!");
+        
         // get numbers
-        print("Enter first and second number:");
         Scanner inp= new Scanner(System.in);
         int num1;
         int num2;
+        println("Enter first number:");
         num1 = inp.nextInt();
+        println("Enter second number:");
         num2 = inp.nextInt();
 
         // get operation
-        print("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:");
+        println("Enter your selection: 1 for addition, 2 for subtraction, 3 for multiplication and 4 for division:");
         int choose;
         choose = inp.nextInt();
 
         // calculate and print result
         switch (choose){
             case 1:
-                print(addition( num1,num2));
+                println("The result of the addition is:");
+                println(addition( num1,num2));
                 break;
             case 2:
-                print(subtraction( num1,num2));
+                println("The result of the subtraction is:");
+                println(subtraction( num1,num2));
                 break;
             case 3:
-                print(multiplication( num1,num2));
+                println("The result of the multiplication is:");
+                println(multiplication( num1,num2));
                 break;
             case 4:
-                print(division( num1,num2));
+                println("The result of the division is:");
+                println(division( num1,num2));
                 break;
             default:
-                print("Illegal Operation");
+                println("Illegal Operation");
         }
 
         inp.close();
+        println("Thank you for using this awesome calculator.");
     }
 
-    private void print(Object object) {
+    private void println(Object object) {
         System.out.println(object); //NOSONAR
     }
     
