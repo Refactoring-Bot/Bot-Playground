@@ -8,6 +8,10 @@ public class Calculator extends SuperCalculator {
 
     public final static int MULTIPLIER = 10;
 
+    public static void main(String[] args) {
+        new Calculator().runProgram();
+    }
+    
     public double addition(double a, double b) {
         return a + b;
     }
@@ -26,9 +30,9 @@ public class Calculator extends SuperCalculator {
         return a / b;
     }
 
-    public void main() {
+    public void runProgram() {
         // get numbers
-        System.out.println("Enter first and second number:");
+        print("Enter first and second number:");
         Scanner inp= new Scanner(System.in);
         int num1;
         int num2;
@@ -36,30 +40,35 @@ public class Calculator extends SuperCalculator {
         num2 = inp.nextInt();
 
         // get operation
-        System.out.println("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:");
+        print("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:");
         int choose;
         choose = inp.nextInt();
 
         // calculate and print result
         switch (choose){
             case 1:
-                System.out.println(addition( num1,num2));
+                print(addition( num1,num2));
                 break;
             case 2:
-                System.out.println(subtraction( num1,num2));
+                print(subtraction( num1,num2));
                 break;
             case 3:
-                System.out.println(multiplication( num1,num2));
+                print(multiplication( num1,num2));
                 break;
             case 4:
-                System.out.println(division( num1,num2));
+                print(division( num1,num2));
                 break;
             default:
-                System.out.println("Illegal Operation");
+                print("Illegal Operation");
         }
 
         inp.close();
     }
+
+    private void print(Object object) {
+        System.out.println(object); //NOSONAR
+    }
+    
 }
 
 
