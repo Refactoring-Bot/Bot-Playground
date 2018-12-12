@@ -6,6 +6,8 @@ public class Calculator extends SuperCalculator {
 
     private String resultAsText;
 
+    private Object currentPrint;
+
     public final static int MULTIPLIER = 10;
 
     public double addition(double a, double b) {
@@ -63,6 +65,7 @@ public class Calculator extends SuperCalculator {
 
     private void print(Object object) {
         // prints the given object
+        this.currentPrint = object;
         return;
     }
 }
