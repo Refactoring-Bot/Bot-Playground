@@ -8,6 +8,10 @@ public class Calculator extends SuperCalculator {
 
     public final static int MULTIPLIER = 10;
 
+    public static void main(String[] args) {
+        new Calculator().runProgram();
+    }
+    
     public double addition(double a, double b) {
         return a + b;
     }
@@ -26,7 +30,7 @@ public class Calculator extends SuperCalculator {
         return a / b;
     }
 
-    public void main() {
+    public void runProgram() {
         // get numbers
         print("Enter first and second number:");
         Scanner inp= new Scanner(System.in);
@@ -62,10 +66,9 @@ public class Calculator extends SuperCalculator {
     }
 
     private void print(Object object) {
-        // prints the given object
-        Object currentPrint = object;
-        this.print(currentPrint);
+        System.out.println(object); //NOSONAR
     }
+    
 }
 
 
