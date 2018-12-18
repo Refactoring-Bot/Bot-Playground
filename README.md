@@ -4,4 +4,4 @@
 This is the playground for the [Refactoring-Bot](https://github.com/Refactoring-Bot/Refactoring-Bot), which can automatically fix code smells by refactoring.
 The preferred way to try the bot is to fork from this repository and let the bot work on the fork.
 
-The project in this repository should contain exactly one example per code smell that the bot can automatically fix.
+The project in this repository should contain exactly one example per code smell that the bot can (soon) automatically fix.
