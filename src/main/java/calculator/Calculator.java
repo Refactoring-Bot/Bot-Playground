@@ -12,6 +12,7 @@ public class Calculator extends SuperCalculator {
         new Calculator().runProgram();
     }
     
+    @Override
     public double addition(double a, double b) {
         return a + b;
     }
@@ -78,6 +79,7 @@ public class Calculator extends SuperCalculator {
     }
     
 }
+
 
 
 
