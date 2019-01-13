@@ -34,7 +34,7 @@ public class Calculator extends SuperCalculator {
 	 *            this one here
 	 * @return
 	 */
-	public double multiplication(double a, double b, double c) {
+	private double multiplication(double a, double b, double c) {
 		return a * b;
 	}
 
