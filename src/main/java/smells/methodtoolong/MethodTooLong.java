@@ -1,53 +1,21 @@
-package calculator;
+package smells.methodtoolong;
 
 import java.util.Scanner;
 
-public class Calculator extends SuperCalculator {
-
-	/**
-	 * [smell] This variable is never used
-	 */
-	private String resultAsText;
-
-	/**
-	 * [smell] Modifiers are not in correct order
-	 */
-	public final static int MULTIPLIER = 10;
+/**
+ * Too long methods are more difficult to understand and might have too many
+ * responsibilities. They should therefore be refactored into smaller methods.
+ */
+public class MethodTooLong {
 
 	public static void main(String[] args) {
-		new Calculator().runProgram();
+		new MethodTooLong().runProgram();
 	}
 
 	/**
-	 * [smell] This method misses an @Override annotation
-	 */
-	public double addition(double a, double b) {
-		return a + b;
-	}
-
-	/**
-	 * [smell] This method has an unused parameter
-	 * 
-	 * @param a
-	 * @param b
-	 * @param c
-	 *            this one here
-	 * @return
-	 */
-	private double multiplication(double a, double b, double c) {
-		return a * b;
-	}
-
-	public double subtraction(double a, double b) {
-		return a - b;
-	}
-
-	public double division(double a, double b) {
-		return a / b;
-	}
-
-	/**
-	 * [smell] This method is too long
+	 * Depending on the threshold value, this method can be too long with more than
+	 * 30 lines of code. Comments describing the functionality of multiple lines of
+	 * code are sometimes a good indication that this part can be extracted.
 	 */
 	public void runProgram() {
 		println("The calculator is ready to calculate!");
@@ -70,19 +38,19 @@ public class Calculator extends SuperCalculator {
 		switch (choose) {
 		case 1:
 			println("The result of the addition is:");
-			println(addition(num1, num2));
+			println(num1 + num2);
 			break;
 		case 2:
 			println("The result of the subtraction is:");
-			println(subtraction(num1, num2));
+			println(num1 - num2);
 			break;
 		case 3:
 			println("The result of the multiplication is:");
-			println(multiplication(num1, num2, 1));
+			println(num1 * num2);
 			break;
 		case 4:
 			println("The result of the division is:");
-			println(division(num1, num2));
+			println(num1 / num2);
 			break;
 		default:
 			println("Illegal Operation");
