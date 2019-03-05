@@ -7,17 +7,16 @@ package smells.incorrectorderofmodifiers;
  */
 public class IncorrectOrderOfModifiers {
 
-	/**
-	 * expected: private static final int
-	 */
-	private final static int MULTIPLIER = 10;
+    /**
+     *  expected: private static final int
+     */
+    private static final int MULTIPLIER = 10;
 
-	/**
-	 * 
-	 * @return
-	 */
-	protected int getMultiplier() {
-		return MULTIPLIER;
-	}
-
+    /**
+     *  @return
+     */
+    protected int getMultiplier() {
+        return MULTIPLIER;
+    }
 }
+
