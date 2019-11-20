@@ -6,11 +6,12 @@ package smells.unusedmethodparameter;
 public class UnusedMethodParameter {
 
 	/**
-	 * @param a
-	 * @param c
-	 * @return
-	 */
-	protected int calculateSomething(int a, int b, int c) {
+ * 
+ * @param a
+ * @param c
+ * @return
+ */
+	protected int calculateSomething(int a, int c) {
 		int result = (a + c) * 0;
 		result = result + 1;
 		return result;
@@ -23,7 +24,8 @@ public class UnusedMethodParameter {
 	 * @return
 	 */
 	protected int calculateSomethingElse() {
-		return calculateSomething(1, 2, 3);
+		return calculateSomething(1, 3);
 	}
 
 }
+
